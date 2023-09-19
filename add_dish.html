@@ -6,12 +6,10 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./reset.css" />
     <link
       rel="stylesheet"
@@ -23,9 +21,9 @@
     <main class="main">
       <div class="container">
         <form action="">
-          <p class="title">Добавить блюдо</p>
-          <div class="dish-info">
-            <p class="name">НАЗВАНИЕ</p>
+          <p class="message">Добавить блюдо</p>
+          <div class="dish__info">
+            <p class="dish__title">Название</p>
             <input
               class="input input_grey"
               type="text"
@@ -34,10 +32,9 @@
               required
             />
           </div>
-
-          <div class="dish">
-            <p class="name">Ингридиент 1</p>
-            <select class="js-choice">
+          <div class="dish__item">
+            <p class="dish__title">Ингридиент 1 (в мере "ладонь")</p>
+            <select class="js-choice_1">
               <option value="" selected>Введите ингридиент</option>
               <option value="1">Кафе</option>
               <option value="2">Финтес клуб</option>
@@ -54,20 +51,25 @@
               <option value="13">Медицина</option>
               <option value="14">Маркетинг</option>
             </select>
-            <p class="name">Количество</p>
+            <p class="dish__title">Количество</p>
             <input
               class="input input_grey"
-              type="text"
+              type="number"
               maxlength="100"
               placeholder="Введите количество на 1 порцию"
               required
             />
-            <div class="amount-info">450 / 10 / 20 / 4</div>
+            <div class="dish__amount">450 / 10 / 20 / 4</div>
           </div>
-          <div class="add-ingredient">Добавить ингридиент</div>
-          <div class="recepi">
-            <p class="name">Рецепт</p>
-            <textarea class="recepi-area" name="" id=""></textarea>
+          <button class="dish__add">Добавить ингридиент</button>
+          <div class="dish__recepi">
+            <p class="dish__title">Рецепт</p>
+            <textarea
+              placeholder="Введите ингридиент"
+              class="dish__area"
+              name=""
+              id=""
+            ></textarea>
           </div>
           <p class="general-calories">Общее КБЖУ блюда: 300/20/10/3</p>
           <button class="button_submit" type="submit">Сохранить</button>
