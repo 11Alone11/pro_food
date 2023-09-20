@@ -99,7 +99,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 28px;
 }
 
-.dish__area {
+.dish__textarea {
   margin-bottom: 12px;
   color: #303030;
   font-size: 11px;
@@ -118,7 +118,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 16px;
 }
 
-.dish__area::placeholder {
+.dish__textarea::placeholder {
   color: #b7b7b7;
   font-family: Montserrat;
   font-size: 11px;
@@ -127,7 +127,7 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: normal;
 }
 
-.general-calories {
+.dish__calories {
   margin-bottom: 20px;
   margin-left: 20px;
   color: #303030;
@@ -175,7 +175,7 @@ input[type="number"]::-webkit-outer-spin-button {
   transition: 0.3s ease-out;
   width: 26px;
   margin-top: -3px;
-  margin-right: 16px;
+  margin-right: 10px;
   height: 10px;
   background-repeat: no-repeat;
   background-image: url(../images/arrow.svg);
@@ -186,7 +186,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 26px;
   height: 10px;
   margin-top: -4px;
-  margin-right: 16px;
+  margin-right: 10px;
   background-repeat: no-repeat;
   transform: rotateX(180deg);
   background-image: url(../images/arrow.svg);
@@ -294,4 +294,36 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 1px;
   border-radius: 20px;
   border: 1.2px solid #303030;
+}
+
+.ingredient__info {
+  margin-bottom: 12px;
+}
+
+.input_pfc {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.input_relative_last {
+  margin-bottom: 20px;
+}
+
+.input__relative {
+  position: relative;
+}
+
+.cal {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 20px;
+  color: #303030;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
