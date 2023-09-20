@@ -10,9 +10,7 @@ const renderSelect = () => {
     el.addEventListener(
       "choice",
       function (event) {
-        document
-          .querySelectorAll(".choices__inner")
-          .forEach((el) => (el.style.color = "#303030"));
+        el.parentElement.style.color = "#303030";
       },
       false
     );
@@ -53,23 +51,8 @@ button.addEventListener("click", (event) => {
   placeholder="Введите количество на 1 порцию"
   required
 />
-
 </div>`
   );
-  console.log(choicesCounter);
 
-  const elements = document.querySelectorAll(`.js-choice_${choicesCounter++}`);
-  elements.forEach((el) => {
-    const choices = new Choices(el, {
-      itemSelectText: "",
-      noResultsText: "Не найдено",
-    });
-    el.addEventListener(
-      "choice",
-      function (event) {
-        el.parentElement.style.color = "#303030";
-      },
-      false
-    );
-  });
+  renderSelect();
 });
