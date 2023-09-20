@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <form action="">
+          <p class="message">Добавить блюдо</p>
+          <div class="dish__info">
+            <p class="dish__title">Название</p>
+            <input
+              class="input input_grey"
+              style="margin-bottom: 12px"
+              type="text"
+              maxlength="100"
+              placeholder="Мясо"
+              required
+            />
+            <p class="dish__title">Тип</p>
+            <select class="js-choice_1">
+              <option value="" selected>Введите ингридиент</option>
+              <option value="1">Кафе</option>
+              <option value="2">Финтес клуб</option>
+              <option value="3">Пиццерия</option>
+              <option value="4">Реклама</option>
+              <option value="5">Салон красоты</option>
+              <option value="6">Шаурмичная</option>
+              <option value="7">Бургерная</option>
+              <option value="8">Кальянная</option>
+              <option value="9">Суши-бар</option>
+              <option value="10">Интернет-магазин</option>
+              <option value="11">Рыбалка</option>
+              <option value="12">Пчеловодство</option>
+              <option value="13">Медицина</option>
+              <option value="14">Маркетинг</option>
+            </select>
+          </div>
+          <div class="dish__item">
+            <p class="dish__title">Блюдо 1</p>
+            <select class="js-choice_1">
+              <option value="" selected>Введите ингридиент</option>
+              <option value="1">Кафе</option>
+              <option value="2">Финтес клуб</option>
+              <option value="3">Пиццерия</option>
+              <option value="4">Реклама</option>
+              <option value="5">Салон красоты</option>
+              <option value="6">Шаурмичная</option>
+              <option value="7">Бургерная</option>
+              <option value="8">Кальянная</option>
+              <option value="9">Суши-бар</option>
+              <option value="10">Интернет-магазин</option>
+              <option value="11">Рыбалка</option>
+              <option value="12">Пчеловодство</option>
+              <option value="13">Медицина</option>
+              <option value="14">Маркетинг</option>
+            </select>
+            <p class="dish__title">% в тарелке</p>
+            <input
+              class="input input_grey"
+              type="number"
+              maxlength="100"
+              placeholder="Введите количество на 1 порцию"
+              required
+            />
+          </div>
+
+          <button class="dish__add">Добавить ингридиент</button>
+          <p class="dish__calories" style="margin-top: 16px">
+            Общее КБЖУ блюда: 300/20/10/3
+          </p>
+          <button class="button_submit" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="./add_meal.js"></script>
+  </body>
+</html>
